@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="homePage" class="card">
+    <div class="title">ลองหาแนวเพลงของคุณกัน</div>
+    <div class="button" onclick="start()">let’s go</div>
+  </div>">
+  <div id="questionPage" class="card hidden">
+    <h3>คำถาม</h3>
+    <ul>
+      <li onclick="selectChoice(1)">1</li>
+      <li onclick="selectChoice(2)">2</li>
+      <li onclick="selectChoice(3)">3</li>
+      <li onclick="selectChoice(4)">4</li>
+    </ul>
+  </div>
+  <div id="homeBtn" class="home hidden" onclick="goHome()">🏠</div>
+  <script>
+  function start() {
+    document.getElementById("homePage").style.display = "none";
+    document.getElementById("questionPage").style.display = "flex";
+    document.getElementById("homeBtn").style.display = "flex";
+  }
+  function goHome() {
+    document.getElementById("homePage").style.display = "flex";
+    document.getElementById("questionPage").style.display = "none";
+    document.getElementById("homeBtn").style.display = "none";
+  }
+</script>
+</body>
+</html>
