@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Personality</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="home" class="card">
+  <h2>ลองหาแนวเพลงของคุณกัน</h2>
+  <button onclick="start()">เริ่มเลย</button>
+</div>
+
+<div id="quiz" class="card hidden">
+  <h3 id="question"></h3>
+  <div id="choices"></div>
+</div>
+
+<div id="result" class="card hidden">
+  <h2 id="genre"></h2>
+  <p id="description"></p>
+
+  <div id="songs"></div>
+
+  <button onclick="goHome()">เล่นใหม่</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
